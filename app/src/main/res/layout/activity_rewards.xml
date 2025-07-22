@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RewardsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple_base"
+            android:theme="@style/ToolbarTheme"
+            app:titleTextColor="@color/white" />
+
+        <View
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:background="@color/pink_base" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tv_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Rewards"
+        android:textColor="@color/purple_base"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_monday_box"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_monday_rewards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_monday"
+        app:srcCompat="@drawable/iv_red_box" />
+
+    <TextView
+        android:id="@+id/tv_monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/label_monday"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_monday_box"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rewards" />
+
+    <TextView
+        android:id="@+id/tv_monday_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_one_fit_token"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_monday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_monday" />
+
+    <ImageView
+        android:id="@+id/iv_tuesday_box"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tuesday_rewards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_tuesday"
+        app:srcCompat="@drawable/iv_red_box" />
+
+    <TextView
+        android:id="@+id/tv_tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/label_tuesday"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_tuesday_box"
+        app:layout_constraintTop_toBottomOf="@+id/tv_monday_rewards" />
+
+    <TextView
+        android:id="@+id/tv_tuesday_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_one_fit_token"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_tuesday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tuesday" />
+
+    <ImageView
+        android:id="@+id/iv_wednesday_box"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_wednesday_rewards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_wednesday"
+        app:srcCompat="@drawable/iv_red_box" />
+
+    <TextView
+        android:id="@+id/tv_wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/label_wednesday"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_wednesday_box"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tuesday_rewards" />
+
+    <TextView
+        android:id="@+id/tv_wednesday_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_one_fit_token"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_wednesday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wednesday" />
+
+    <ImageView
+        android:id="@+id/iv_thursday_box"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_thursday_rewards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_thursday"
+        app:srcCompat="@drawable/iv_red_box" />
+
+    <TextView
+        android:id="@+id/tv_thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/label_thursday"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_thursday_box"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wednesday_rewards" />
+
+    <TextView
+        android:id="@+id/tv_thursday_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_one_fit_token"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_thursday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_thursday" />
+
+    <ImageView
+        android:id="@+id/iv_friday_box"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_friday_rewards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_friday"
+        app:srcCompat="@drawable/iv_red_box" />
+
+    <TextView
+        android:id="@+id/tv_friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/label_friday"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_friday_box"
+        app:layout_constraintTop_toBottomOf="@+id/tv_thursday_rewards" />
+
+    <TextView
+        android:id="@+id/tv_friday_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_one_fit_token"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_friday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_friday" />
+
+    <ImageView
+        android:id="@+id/iv_saturday_box"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_saturday_rewards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_saturday"
+        app:srcCompat="@drawable/iv_red_box" />
+
+    <TextView
+        android:id="@+id/tv_saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/label_saturday"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_saturday_box"
+        app:layout_constraintTop_toBottomOf="@+id/tv_friday_rewards" />
+
+    <TextView
+        android:id="@+id/tv_saturday_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_one_fit_token"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_saturday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_saturday" />
+
+    <ImageView
+        android:id="@+id/iv_sunday_box"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_sunday_rewards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_sunday"
+        app:srcCompat="@drawable/iv_red_box" />
+
+    <TextView
+        android:id="@+id/tv_sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/label_sunday"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_sunday_box"
+        app:layout_constraintTop_toBottomOf="@+id/tv_saturday_rewards" />
+
+    <TextView
+        android:id="@+id/tv_sunday_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_one_fit_token"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_sunday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sunday" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="325dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/pink_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sunday_rewards" />
+
+    <TextView
+        android:id="@+id/tv_four_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="13dp"
+        android:text="4 days"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/tv_four_days_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_five_fit_tokens"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_four_days"
+        app:layout_constraintStart_toStartOf="@+id/tv_four_days"
+        app:layout_constraintTop_toBottomOf="@+id/tv_four_days" />
+
+    <ImageView
+        android:id="@+id/iv_four_days_box"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_four_days_rewards"
+        app:layout_constraintStart_toStartOf="@+id/tv_four_days_rewards"
+        app:layout_constraintTop_toBottomOf="@+id/tv_four_days_rewards"
+        app:srcCompat="@drawable/iv_red_box" />
+
+    <TextView
+        android:id="@+id/tv_seven_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="90dp"
+        android:text="7 days"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/tv_seven_days_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_ten_fit_tokens"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_seven_days"
+        app:layout_constraintStart_toStartOf="@+id/tv_seven_days"
+        app:layout_constraintTop_toBottomOf="@+id/tv_seven_days"  />
+
+    <ImageView
+        android:id="@+id/iv_seven_days_box"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_seven_days_rewards"
+        app:layout_constraintStart_toStartOf="@+id/tv_seven_days_rewards"
+        app:layout_constraintTop_toBottomOf="@+id/tv_seven_days_rewards"
+        app:srcCompat="@drawable/iv_red_box" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:onClick="onButtonEditProfileClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="Username"
+            android:textColor="@color/purple_base"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_edit_profile"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="45dp"
+            android:text="@string/title_edit_profile"
+            android:textColor="@color/purple_base"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/ic_goto"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_guide"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_goto"
+        android:text="@string/title_guide_to_fit_garage"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_base"
+        android:textSize="18sp"
+        android:onClick="onButtonGuideClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_edit_profile" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/pink_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_guide" />
+
+    <Button
+        android:id="@+id/btn_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_goto"
+        android:text="@string/title_statistics"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_base"
+        android:textSize="18sp"
+        android:onClick="onButtonStatisticsClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_guide" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/pink_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_statistics" />
+
+    <Button
+        android:id="@+id/btn_privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_goto"
+        android:text="@string/title_privacy_policy"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_base"
+        android:textSize="18sp"
+        android:onClick="onButtonPrivacyPolicyClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_statistics" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/pink_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_privacy_policy" />
+
+    <Button
+        android:id="@+id/btn_acknowledgements"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_goto"
+        android:text="@string/title_acknowledgements"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_base"
+        android:textSize="18sp"
+        android:onClick="onButtonAcknowledgementsClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_privacy_policy" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/pink_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_acknowledgements" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

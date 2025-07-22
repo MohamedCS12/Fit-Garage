@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutLevelActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple_base"
+            android:theme="@style/ToolbarTheme"
+            app:titleTextColor="@color/white" />
+
+        <View
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:background="@color/pink_base" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tv_workout_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:text="Workout Type"
+        android:textColor="@color/purple_base"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_select_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select your level"
+        android:textColor="@color/purple_base"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_workout_type" />
+
+    <Button
+        android:id="@+id/btn_beginner"
+        android:layout_width="360dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#E5E5E5"
+        android:text="Beginner"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/pink_base"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_intermediate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_select_level" />
+
+    <Button
+        android:id="@+id/btn_intermediate"
+        android:layout_width="360dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#D9D7D7"
+        android:text="Intermediate"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/pink_base"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_advanced"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_beginner" />
+
+    <Button
+        android:id="@+id/btn_advanced"
+        android:layout_width="360dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#C4C4C4"
+        android:text="Advanced"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/pink_base"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_intermediate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatisticsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple_base"
+            android:theme="@style/ToolbarTheme"
+            app:titleTextColor="@color/white" />
+
+        <View
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:background="@color/pink_base" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tv_statistics"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/title_statistics"
+        android:textColor="@color/purple_base"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_workouts_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:text="Workouts completed"
+        android:textColor="@color/purple_base"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_statistics" />
+
+    <TextView
+        android:id="@+id/tv_workouts_completed_count"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginEnd="50dp"
+        android:text="0"
+        android:textColor="?android:textColorHint"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_workouts_completed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_workouts_completed"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/pink_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_workouts_completed" />
+
+    <TextView
+        android:id="@+id/tv_rewards_redeemed"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:text="Rewards redeemed"
+        android:textColor="@color/purple_base"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_workouts_completed" />
+
+    <TextView
+        android:id="@+id/tv_rewards_redeemed_count"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginEnd="50dp"
+        android:text="0"
+        android:textColor="?android:textColorHint"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_rewards_redeemed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_rewards_redeemed"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/pink_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rewards_redeemed" />
+
+    <TextView
+        android:id="@+id/tv_calories_burnt"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:text="Calories burnt"
+        android:textColor="@color/purple_base"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rewards_redeemed" />
+
+    <TextView
+        android:id="@+id/tv_calories_burnt_count"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginEnd="50dp"
+        android:text="0 cal"
+        android:textColor="?android:textColorHint"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_calories_burnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_calories_burnt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/pink_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_calories_burnt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

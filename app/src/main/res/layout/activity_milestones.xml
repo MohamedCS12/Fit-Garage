@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MilestonesActivity">
+
+    <ProgressBar
+        android:id="@+id/pb_minutes_monday"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="270dp"
+        android:layout_height="15dp"
+        android:max="30"
+        android:progressDrawable="@drawable/pb_minutes"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_minutes_monday"
+        app:layout_constraintStart_toStartOf="@+id/tv_monday"
+        app:layout_constraintTop_toTopOf="@+id/tv_minutes_monday"
+        app:layout_constraintVertical_bias="0.758" />
+
+    <TextView
+        android:id="@+id/tv_monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_monday"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_minutes_monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="10dp"
+        android:text="0 / 30\nminutes"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pb_minutes_monday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_monday" />
+
+    <ProgressBar
+        android:id="@+id/pb_minutes_tuesday"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="270dp"
+        android:layout_height="15dp"
+        android:max="30"
+        android:progressDrawable="@drawable/pb_minutes"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_minutes_tuesday"
+        app:layout_constraintStart_toStartOf="@+id/tv_tuesday"
+        app:layout_constraintTop_toTopOf="@+id/tv_minutes_tuesday"
+        app:layout_constraintVertical_bias="0.758" />
+
+    <TextView
+        android:id="@+id/tv_tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/label_tuesday"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_minutes_monday" />
+
+    <TextView
+        android:id="@+id/tv_minutes_tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="10dp"
+        android:text="0 / 30\nminutes"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pb_minutes_tuesday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tuesday" />
+
+    <ProgressBar
+        android:id="@+id/pb_minutes_wednesday"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="270dp"
+        android:layout_height="15dp"
+        android:max="30"
+        android:progressDrawable="@drawable/pb_minutes"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_minutes_wednesday"
+        app:layout_constraintStart_toStartOf="@+id/tv_wednesday"
+        app:layout_constraintTop_toTopOf="@+id/tv_minutes_wednesday"
+        app:layout_constraintVertical_bias="0.758" />
+
+    <TextView
+        android:id="@+id/tv_wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/label_wednesday"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_minutes_tuesday" />
+
+    <TextView
+        android:id="@+id/tv_minutes_wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="10dp"
+        android:text="0 / 30\nminutes"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pb_minutes_wednesday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wednesday" />
+
+    <ProgressBar
+        android:id="@+id/pb_minutes_thursday"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="270dp"
+        android:layout_height="15dp"
+        android:max="30"
+        android:progressDrawable="@drawable/pb_minutes"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_minutes_thursday"
+        app:layout_constraintStart_toStartOf="@+id/tv_thursday"
+        app:layout_constraintTop_toTopOf="@+id/tv_minutes_thursday"
+        app:layout_constraintVertical_bias="0.758" />
+
+    <TextView
+        android:id="@+id/tv_thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/label_thursday"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_minutes_wednesday" />
+
+    <TextView
+        android:id="@+id/tv_minutes_thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="10dp"
+        android:text="0 / 30\nminutes"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pb_minutes_thursday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_thursday" />
+
+    <ProgressBar
+        android:id="@+id/pb_minutes_friday"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="270dp"
+        android:layout_height="15dp"
+        android:max="30"
+        android:progressDrawable="@drawable/pb_minutes"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_minutes_friday"
+        app:layout_constraintStart_toStartOf="@+id/tv_friday"
+        app:layout_constraintTop_toTopOf="@+id/tv_minutes_friday"
+        app:layout_constraintVertical_bias="0.758" />
+
+    <TextView
+        android:id="@+id/tv_friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/label_friday"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_minutes_thursday" />
+
+    <TextView
+        android:id="@+id/tv_minutes_friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="10dp"
+        android:text="0 / 30\nminutes"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pb_minutes_friday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_friday" />
+
+    <ProgressBar
+        android:id="@+id/pb_minutes_saturday"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="270dp"
+        android:layout_height="15dp"
+        android:max="30"
+        android:progressDrawable="@drawable/pb_minutes"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_minutes_saturday"
+        app:layout_constraintStart_toStartOf="@+id/tv_saturday"
+        app:layout_constraintTop_toTopOf="@+id/tv_minutes_saturday"
+        app:layout_constraintVertical_bias="0.758" />
+
+    <TextView
+        android:id="@+id/tv_saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/label_saturday"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_minutes_friday" />
+
+    <TextView
+        android:id="@+id/tv_minutes_saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="10dp"
+        android:text="0 / 30\nminutes"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pb_minutes_saturday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_saturday" />
+
+    <ProgressBar
+        android:id="@+id/pb_minutes_sunday"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="270dp"
+        android:layout_height="15dp"
+        android:max="30"
+        android:progressDrawable="@drawable/pb_minutes"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_minutes_sunday"
+        app:layout_constraintStart_toStartOf="@+id/tv_sunday"
+        app:layout_constraintTop_toTopOf="@+id/tv_minutes_sunday"
+        app:layout_constraintVertical_bias="0.758" />
+
+    <TextView
+        android:id="@+id/tv_sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/label_sunday"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_minutes_saturday" />
+
+    <TextView
+        android:id="@+id/tv_minutes_sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="10dp"
+        android:text="0 / 30\nminutes"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pb_minutes_sunday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sunday" />
+
+    <Button
+        android:id="@+id/btn_rewards"
+        android:layout_width="150dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/pink_light"
+        android:onClick="onButtonRewardsClicked"
+        android:text="Rewards"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_base"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_minutes_sunday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_minutes_sunday"
+        app:layout_constraintVertical_bias="0.248" />
+</androidx.constraintlayout.widget.ConstraintLayout>
