@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitgarage">
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FitGarage">
+        <activity
+            android:name=".AcknowledgementsActivity"
+            android:exported="false"
+            android:parentActivityName=".SettingsActivity" />
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:exported="false"
+            android:parentActivityName=".SettingsActivity" />
+        <activity
+            android:name=".StatisticsActivity"
+            android:exported="false"
+            android:parentActivityName=".SettingsActivity" />
+        <activity
+            android:name=".GuideActivity"
+            android:exported="false"
+            android:parentActivityName=".SettingsActivity" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".SettingsActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RewardsActivity"
+            android:exported="false"
+            android:parentActivityName=".MilestonesActivity" />
+        <activity
+            android:name=".MilestonesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tip5Activity"
+            android:exported="false"
+            android:parentActivityName=".TipsActivity" />
+        <activity
+            android:name=".Tip4Activity"
+            android:exported="false"
+            android:parentActivityName=".TipsActivity" />
+        <activity
+            android:name=".Tip3Activity"
+            android:exported="false"
+            android:parentActivityName=".TipsActivity" />
+        <activity
+            android:name=".Tip2Activity"
+            android:exported="false"
+            android:parentActivityName=".TipsActivity" />
+        <activity
+            android:name=".Tip1Activity"
+            android:exported="false"
+            android:parentActivityName=".TipsActivity" />
+        <activity
+            android:name=".TipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkoutCompletedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkoutLevelActivity"
+            android:exported="false"
+            android:parentActivityName=".WorkoutTypeActivity" />
+        <activity
+            android:name=".WorkoutTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerBaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EntryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".ExecutableService"
+            android:enabled="true" />
+    </application>
+
+</manifest>
